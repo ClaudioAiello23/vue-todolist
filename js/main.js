@@ -7,10 +7,14 @@ createApp({
         return {
             toDoTitle: 'LISTA DELLE COSE DA FARE',
             index: '',
+            userToDo: {
+                    text: '',
+                    done: false
+            },
             toDoList: [
                 {
                     text: 'Comprare la pizza',
-                    done: true, 
+                    done: true
                 },
                 {
                     text: "Guardare l'Inter",
@@ -22,7 +26,7 @@ createApp({
                 },
                 {
                     text: "Studiare Vue JS",
-                    done: true
+                    done: false
                 }
             ]
         }
@@ -34,6 +38,11 @@ createApp({
             this.toDoList[index];
             console.log(index);
             this.toDoList.splice(index, 1);
+        },
+        addItem(){
+            console.log(this.userToDo);
+            (this.toDoList).push(this.userToDo);
+
         }
     }
 }).mount('#app')
