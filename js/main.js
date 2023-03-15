@@ -17,7 +17,7 @@ createApp({
                 },
                 {
                     text: "Bere la birra",
-                    done: false
+                    done: true
                 },
                 {
                     text: "Studiare Vue JS",

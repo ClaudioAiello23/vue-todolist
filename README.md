@@ -17,4 +17,5 @@ BONUS
 ----------------------------------------------------------------
 ESERCIZIO - SVOLGIMENTO (Ipotesi)
 - Creare da file JS array di oggetti ToDo di prova (lista già definita), e configurare il relativo Html e Css per la visualizzazione base. Nell'oggetto inserire le proprietà TEXT (stringa) e TODO-DONE (valore booleano).
--MILESTONE1: stampare la lista di partenza su Html e sbarrare il valore di text nel caso il valore di TODO-DONE sia settato su TRUE. Fare una prova.
+-MILESTONE1: stampare la lista di partenza su Html e sbarrare il valore di text nel caso il valore di TODO-DONE sia settato su TRUE. Inserita la condizione IF sull'elemento LI dell'html; nella condizione IF impostata la classe "done" che imposta il testo sbarrato.
+-MILESTONE2: impostare una X in html con font Awesome di fianco ad ogni elemento della toDoList; fare in modo che al click sulla X l'intero elemento cliccato scompaia.
