@@ -7,7 +7,7 @@ createApp({
         return {
             toDoTitle: 'LISTA DELLE COSE DA FARE',
             index: '',
-            userToDo: {
+            userToDo: { //da verificare
                     text: '',
                     done: false
             },
@@ -39,10 +39,10 @@ createApp({
             console.log(index);
             this.toDoList.splice(index, 1);
         },
-        addItem(){
+        addItem(){ //da verificare
             console.log(this.userToDo);
             (this.toDoList).push(this.userToDo);
-
+            console.log(this.toDoList)
         }
     }
 }).mount('#app')
