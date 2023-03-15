@@ -1,0 +1,30 @@
+/* 
+***********************
+COMMON
+*********************** 
+*/
+body{
+    background-color: lightgreen;
+}
+
+/* 
+***********************
+HEADER
+*********************** 
+*/
+header{
+    border-bottom: .125rem solid black;
+    background-color: rgb(14, 234, 14);
+}
+header h1{
+    color: rgb(237, 237, 12);
+}
+header div{
+    color: white;
+}
+
+/* 
+***********************
+MAIN
+*********************** 
+*/
