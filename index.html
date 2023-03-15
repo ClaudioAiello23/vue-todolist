@@ -30,10 +30,10 @@
                 <div class="row justify-content-center py-4">
                     <div class="col col-md-8">
                         <ul class="list-group fw-bold">
-                            <li class="list-group-item d-flex justify-content-between" v-for="listItem in toDoList">
+                            <li class="list-group-item d-flex justify-content-between" v-for="(listItem, index) in toDoList">
                                 <div v-if="listItem.done === true" class="done">{{ listItem.text }}</div>
                                 <div v-else>{{ listItem.text }}</div>
-                                <i role="button" class="fa-solid fa-xmark pt-1"></i>
+                                <i role="button" class="fa-solid fa-xmark pt-1" @click="removeItem(index)"></i>
                             </li>
                     </div>
                 </div>

@@ -6,13 +6,14 @@ createApp({
     data() {
         return {
             toDoTitle: 'LISTA DELLE COSE DA FARE',
+            index: '',
             toDoList: [
                 {
                     text: 'Comprare la pizza',
                     done: true, 
                 },
                 {
-                    text: "guardare l'Inter",
+                    text: "Guardare l'Inter",
                     done: false
                 },
                 {
@@ -28,7 +29,12 @@ createApp({
     },
 
     methods:{
-        
+        // rimozione elemento dall'Array di oggetti in base all'indice
+        removeItem(index){
+            this.toDoList[index];
+            console.log(index);
+            this.toDoList.splice(index, 1);
+        }
     }
 }).mount('#app')
 
