@@ -19,7 +19,7 @@
 
 <body>
     <!-- Contenitore elementi VueJS -->
-    <div id="app">
+    <div id="app" v-cloak>
         <header class="container-fluid d-flex justify-content-center py-3">
             <div class="pt-2 fs-4"><i class="fa-solid fa-child-reaching"></i></div>
             <h1 class="px-5">{{ toDoTitle }}</h1>
@@ -31,21 +31,26 @@
                     <div class="col col-md-8">
                         <ul class="list-group fw-bold">
                             <li class="list-group-item d-flex justify-content-between">
-                                <div>{{ toDoList[0].text }}</div>
+                                <div v-if="toDoList[0].done=== true" class="done">{{ toDoList[0].text }}</div>
+                                <div v-else>{{ toDoList[0].text }}</div>
                                 <i role="button" class="fa-solid fa-trash-can pt-1"></i>
                             </li>
                             <li class="list-group-item d-flex justify-content-between">
-                                <div>{{ toDoList[1].text }}</div>
+                                <div v-if="toDoList[1].done=== true" class="done">{{ toDoList[1].text }}</div>
+                                <div v-else>{{ toDoList[1].text }}</div>
                                 <i role="button" class="fa-solid fa-trash-can pt-1"></i>
                             </li>
                             <li class="list-group-item d-flex justify-content-between">
-                                <div>{{ toDoList[2].text }}</div>
+                                <div v-if="toDoList[2].done=== true" class="done">{{ toDoList[2].text }}</div>
+                                <div v-else>{{ toDoList[2].text }}</div>
                                 <i role="button" class="fa-solid fa-trash-can pt-1"></i>
                             </li>
                             <li class="list-group-item d-flex justify-content-between">
-                                <div>{{ toDoList[3].text }}</div>
+                                <div v-if="toDoList[3].done=== true" class="done">{{ toDoList[3].text }}</div>
+                                <div v-else>{{ toDoList[3].text }}</div>
                                 <i role="button" class="fa-solid fa-trash-can pt-1"></i>
                             </li>
+                           
                     </div>
                 </div>
             </div>

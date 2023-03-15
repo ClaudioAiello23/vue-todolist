@@ -7,6 +7,10 @@ body{
     background-color: lightgreen;
 }
 
+[v-cloak]{
+    display: none;
+}
+
 /* 
 ***********************
 HEADER
@@ -28,3 +32,9 @@ header div{
 MAIN
 *********************** 
 */
+
+/* Impostare una classe per toDoList = Done, che
+sbarri il testo della lista */
+.done{
+    text-decoration: line-through;
+}

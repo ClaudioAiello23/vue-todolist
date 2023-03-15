@@ -15,3 +15,6 @@ BONUS
 1.oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
 2.cliccando sul testo dell’item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 ----------------------------------------------------------------
+ESERCIZIO - SVOLGIMENTO (Ipotesi)
+- Creare da file JS array di oggetti ToDo di prova (lista già definita), e configurare il relativo Html e Css per la visualizzazione base. Nell'oggetto inserire le proprietà TEXT (stringa) e TODO-DONE (valore booleano).
+-MILESTONE1: stampare la lista di partenza su Html e sbarrare il valore di text nel caso il valore di TODO-DONE sia settato su TRUE. Fare una prova.

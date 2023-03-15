@@ -9,7 +9,7 @@ createApp({
             toDoList: [
                 {
                     text: 'Comprare la pizza',
-                    done: false
+                    done: true, 
                 },
                 {
                     text: "guardare l'Inter",
@@ -21,11 +21,14 @@ createApp({
                 },
                 {
                     text: "Studiare Vue JS",
-                    done: false
+                    done: true
                 }
             ]
         }
+    },
+
+    methods:{
+        
     }
 }).mount('#app')
 
-console.log(createApp)
