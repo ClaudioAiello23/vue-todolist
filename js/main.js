@@ -56,6 +56,8 @@ createApp({
                 this.toDoList[index].done = false;
                 console.log('Il mio TO-DO è DA FARE');
            } 
+        //    Alternativa a if (commentata), posso impostare la chiave "done" uguale al suo contrario
+        //    this.toDoList[index].done = ! this.toDoList[index].done
         }
     }
 }).mount('#app')
