@@ -20,3 +20,5 @@ ESERCIZIO - SVOLGIMENTO (Ipotesi)
 -MILESTONE1: stampare la lista di partenza su Html e sbarrare il valore di text nel caso il valore di TODO-DONE sia settato su TRUE. Inserita la condizione IF sull'elemento LI dell'html; nella condizione IF impostata la classe "done" che imposta il testo sbarrato.
 -MILESTONE2: impostare una X in html con font Awesome di fianco ad ogni elemento della toDoList; fare in modo che al click sulla X l'intero elemento cliccato scompaia. Inserita in JS una funzione split per eliminare dall'array l'elemento selezionato. Richiamata la funzione sul click sulla X in html.
 -MILESTONE3: aggiungere in html un campo di input testuale con un bottone AGGIUNGI; configurare JS in modo che, cliccando sul pulsante, il testo inserito venga aggiunto come nuovo TO-DO all'Array già esistente.
+-Bonus1: inserito evento su campo input di tipo V-On (o @) per abilitare l'inserimento del nuovo to-do anche con il tasto ENTER(INVIO), alternativo al bottone "aggiungi".
+-Bonus2: inizializzata una funzione in JS per cambiare la condizione barrato/non barrato in caso di click sul testo di un to-do.
