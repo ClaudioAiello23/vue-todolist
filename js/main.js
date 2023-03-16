@@ -6,11 +6,12 @@ createApp({
     data() {
         return {
             toDoTitle: 'LISTA DELLE COSE DA FARE',
+            userObj: '',
             index: '',
-            userObj: { //oggetto input utente - v-model - da verificare
-                    text: '',
-                    done: false
-            },
+            // userObj: { //oggetto input utente - v-model - da verificare
+            //         text: '',
+            //         done: false
+            // },
             toDoList: [
                 {
                     text: 'Comprare la pizza',
@@ -39,10 +40,13 @@ createApp({
             console.log(index);
             this.toDoList.splice(index, 1);
         },
-        addItem(){ //da verificare - aggiunge oggetto ma non svuota campo input
+        addItem(){
             console.log(this.userObj);
-            this.toDoList.push(this.userObj);
-            console.log(this.toDoList);
+            this.toDoList.push({
+                text:this.userObj, 
+                done: false
+            });
+            this.userObj = ''; //svuota il campo input dopo aver pushato
         },
         changeBoolean(index){ //bonus2 - click su testo per barrare/non barrare il to-do
             if (this.toDoList[index].done === false) {
