@@ -44,7 +44,7 @@ createApp({
             this.toDoList.push(this.userObj);
             console.log(this.toDoList);
         },
-        changeBoolean(index){ //bonus2 - funz da verificare- collegata al click su testo
+        changeBoolean(index){ //bonus2 - click su testo per barrare/non barrare il to-do
             if (this.toDoList[index].done === false) {
                 this.toDoList[index].done = true;
                 console.log('Il mio TO-DO è stato FATTO');
