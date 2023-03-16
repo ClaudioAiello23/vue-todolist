@@ -29,14 +29,14 @@
             <div class="container">
                 <div class="row justify-content-center py-4">
                     <div class="col-12 col-md-8 input-group my-4">
-                        <input v-model="userObj.text" type="text" class="form-control" placeholder="Inserisci il To-do" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addItem()">Aggiungi</button>
+                        <input v-model="userObj.text" @keyup.enter="addItem()" type="text" class="form-control" placeholder="Inserisci il To-do" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button @click="addItem()" class="btn btn-outline-secondary" type="button" id="button-addon2">Aggiungi</button>
                     </div>
                     <div class="col-12 col-md-8">
                         <ul class="list-group fw-bold">
                             <li class="list-group-item d-flex justify-content-between" v-for="(listItem, index) in toDoList">
-                                <div v-if="listItem.done === true" class="done">{{ listItem.text }}</div>
-                                <div v-else>{{ listItem.text }}</div>
+                                <div v-if="!listItem.done" @click="changeBoolean(index)">{{ listItem.text }}</div>
+                                <div v-else class="done" @click="changeBoolean(index)">{{ listItem.text }}</div>
                                 <i role="button" class="fa-solid fa-xmark pt-1" @click="removeItem(index)"></i>
                             </li>
                         </ul>

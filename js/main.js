@@ -14,7 +14,7 @@ createApp({
             toDoList: [
                 {
                     text: 'Comprare la pizza',
-                    done: true
+                    done: false
                 },
                 {
                     text: "Guardare l'Inter",
@@ -22,7 +22,7 @@ createApp({
                 },
                 {
                     text: "Bere la birra",
-                    done: true
+                    done: false
                 },
                 {
                     text: "Studiare Vue JS",
@@ -39,10 +39,19 @@ createApp({
             console.log(index);
             this.toDoList.splice(index, 1);
         },
-        addItem(){ //da verificare
+        addItem(){ //da verificare - aggiunge oggetto ma non svuota campo input
             console.log(this.userObj);
-            (this.toDoList).push(this.userObj);
+            this.toDoList.push(this.userObj);
             console.log(this.toDoList);
+        },
+        changeBoolean(index){ //bonus2 - funz da verificare- collegata al click su testo
+            if (this.toDoList[index].done === false) {
+                this.toDoList[index].done = true;
+                console.log('Il mio TO-DO è stato FATTO');
+            } else {
+                this.toDoList[index].done = false;
+                console.log('Il mio TO-DO è DA FARE');
+           } 
         }
     }
 }).mount('#app')
