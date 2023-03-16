@@ -1,13 +1,13 @@
 'use strict';
 
-const { createApp } = Vue
+const { createApp } = Vue;
 
 createApp({
     data() {
         return {
             toDoTitle: 'LISTA DELLE COSE DA FARE',
             index: '',
-            userToDo: { //da verificare
+            userObj: { //oggetto input utente - v-model - da verificare
                     text: '',
                     done: false
             },
@@ -40,9 +40,9 @@ createApp({
             this.toDoList.splice(index, 1);
         },
         addItem(){ //da verificare
-            console.log(this.userToDo);
-            (this.toDoList).push(this.userToDo);
-            console.log(this.toDoList)
+            console.log(this.userObj);
+            (this.toDoList).push(this.userObj);
+            console.log(this.toDoList);
         }
     }
 }).mount('#app')
